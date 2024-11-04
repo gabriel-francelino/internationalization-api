@@ -19,8 +19,8 @@ public class UserService {
         return userRepository.save(user);
     }
 
-    public User findById(Long id, Locale locale) {
-        return userRepository.findById(id).orElseThrow(() -> new NotFoundException(messageSource, "User", "id", locale));
+    public User findById(Long id) {
+        return userRepository.findById(id).orElseThrow(() -> new NotFoundException(messageSource, "User", "id"));
     }
 
     public void deleteById(Long id) {

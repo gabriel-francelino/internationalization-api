@@ -3,8 +3,6 @@ package org.example.internationalization;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Locale;
-
 @RestController
 @RequestMapping("/users")
 public class UserController {
@@ -15,7 +13,7 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<User> getUserById(@PathVariable Long id, @RequestHeader(value = "Accept-Language", required = false)Locale locale) {
-        return ResponseEntity.ok(userService.findById(id, locale));
+    public ResponseEntity<User> getUserById(@PathVariable Long id) {
+        return ResponseEntity.ok(userService.findById(id));
     }
 }
