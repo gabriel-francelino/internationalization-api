@@ -1,4 +1,4 @@
-package org.example.internationalization;
+package org.example.internationalization.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

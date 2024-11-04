@@ -1,9 +1,7 @@
-package org.example.internationalization;
+package org.example.internationalization.exception;
 
 import org.springframework.context.MessageSource;
 import org.springframework.context.i18n.LocaleContextHolder;
-
-import java.util.Locale;
 
 public class NotFoundException extends RuntimeException {
     public NotFoundException(MessageSource messageSource, String entity, String field) {

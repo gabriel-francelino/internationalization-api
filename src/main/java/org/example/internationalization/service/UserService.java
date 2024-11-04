@@ -1,9 +1,10 @@
-package org.example.internationalization;
+package org.example.internationalization.service;
 
+import org.example.internationalization.domain.User;
+import org.example.internationalization.exception.NotFoundException;
+import org.example.internationalization.repository.UserRepository;
 import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Service;
-
-import java.util.Locale;
 
 @Service
 public class UserService {

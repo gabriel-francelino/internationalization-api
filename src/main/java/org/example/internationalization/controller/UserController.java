@@ -1,5 +1,7 @@
-package org.example.internationalization;
+package org.example.internationalization.controller;
 
+import org.example.internationalization.service.UserService;
+import org.example.internationalization.domain.User;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

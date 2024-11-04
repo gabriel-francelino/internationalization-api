@@ -1,4 +1,4 @@
-package org.example.internationalization;
+package org.example.internationalization.domain;
 
 import jakarta.persistence.*;
 
